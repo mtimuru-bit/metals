@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Авторские металлы — гид для партнёра | 3ДТЕМА</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --bg-muted: #f3efe9;
+    --text: #1a1a1a;
+    --text-muted: #5f5a52;
+    --text-soft: #8a8478;
+    --border: #e8e2d8;
+    --border-strong: #d4cabb;
+    --accent-bronze: #b8784a;
+    --accent-gold: #c9a961;
+    --accent-deep: #5c4631;
+    --dark: #25232a;
+    --lime: #c8e000;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    color: var(--text);
+    background: #d9d4cc;
+    line-height: 1.6;
+    font-size: 13px;
+  }
+
+  .serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+
+  /* ---------- PAGE ---------- */
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    background: var(--bg);
+    margin: 0 auto 12px;
+    padding: 20mm 18mm;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .page.cover { padding: 0; }
+
+  .kicker {
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--accent-bronze);
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  h1.title {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 1.08;
+    letter-spacing: -0.01em;
+    margin-bottom: 18px;
+    color: var(--text);
+  }
+
+  h2.section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.1;
+    margin-bottom: 6px;
+    color: var(--text);
+  }
+
+  .section-sub {
+    font-size: 13px;
+    color: var(--text-muted);
+    max-width: 150mm;
+    margin-bottom: 22px;
+  }
+
+  h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: 19px;
+    color: var(--accent-deep);
+    margin-bottom: 8px;
+  }
+
+  p { margin-bottom: 10px; }
+  strong { font-weight: 600; color: var(--text); }
+
+  /* ---------- COVER ---------- */
+  .cover-top {
+    background: var(--dark);
+    padding: 16mm 18mm 14mm;
+  }
+  .cover-top img { height: 38px; display: block; }
+
+  .cover-hero {
+    height: 118mm;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  .cover-hero::after {
+    content: '';
+    position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(37,35,42,0) 40%, rgba(37,35,42,0.55) 100%);
+  }
+
+  .cover-body { padding: 16mm 18mm; }
+  .cover-body .kicker { font-size: 11px; }
+  .cover-body h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: 52px;
+    line-height: 1.05;
+    margin-bottom: 16px;
+  }
+  .cover-body .lead {
+    font-size: 16px;
+    color: var(--text-muted);
+    max-width: 150mm;
+    line-height: 1.55;
+  }
+  .cover-meta {
+    margin-top: 28px;
+    padding-top: 18px;
+    border-top: 1px solid var(--border-strong);
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--text-soft);
+  }
+  .cover-meta b { color: var(--accent-bronze); font-weight: 600; }
+
+  /* ---------- PRODUCT ROWS ---------- */
+  .prod {
+    display: grid;
+    grid-template-columns: 26mm 1fr auto;
+    gap: 14px;
+    align-items: center;
+    padding: 11px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .prod:last-child { border-bottom: none; }
+  .prod .thumb {
+    width: 26mm; height: 20mm;
+    border-radius: 3px; overflow: hidden;
+    background: var(--bg-muted);
+  }
+  .prod .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .prod .pname { font-family: 'Cormorant Garamond', serif; font-size: 20px; color: var(--text); line-height: 1.1; }
+  .prod .pdesc { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+  .prod .price { font-family: 'Cormorant Garamond', serif; font-size: 17px; color: var(--accent-deep); white-space: nowrap; text-align: right; }
+  .prod .price small { display: block; font-family: 'Inter'; font-size: 10px; color: var(--text-soft); text-transform: uppercase; letter-spacing: 0.1em; }
+
+  .bigidea {
+    margin-top: 22px;
+    background: var(--dark);
+    color: #f3efe9;
+    border-radius: 4px;
+    padding: 20px 24px;
+  }
+  .bigidea .serif { color: var(--lime); font-size: 22px; display: block; margin-bottom: 6px; }
+  .bigidea p { color: #d8d3ca; margin: 0; font-size: 13px; }
+
+  /* ---------- TWO COLUMN ---------- */
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+  .cols.gap-lg { gap: 28px; }
+
+  .card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 18px 20px;
+  }
+  .card.muted { background: var(--bg-muted); border-color: var(--border-strong); }
+
+  ul.clean { list-style: none; }
+  ul.clean li {
+    position: relative;
+    padding: 6px 0 6px 18px;
+    font-size: 12.5px;
+    line-height: 1.5;
+    border-bottom: 1px solid var(--border);
+  }
+  ul.clean li:last-child { border-bottom: none; }
+  ul.clean li::before { content: "—"; position: absolute; left: 0; color: var(--accent-bronze); }
+
+  .tag-row { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 6px; }
+  .tag { font-size: 11px; padding: 5px 11px; border: 1px solid var(--border-strong); border-radius: 999px; color: var(--text-muted); }
+
+  /* objection Q/A */
+  .qa { padding: 11px 0; border-bottom: 1px solid var(--border); }
+  .qa:last-child { border-bottom: none; }
+  .qa .q { font-family: 'Cormorant Garamond', serif; font-size: 17px; color: var(--accent-deep); margin-bottom: 3px; }
+  .qa .q::before { content: "«"; }
+  .qa .q::after { content: "»"; }
+  .qa .a { font-size: 12.5px; color: var(--text-muted); line-height: 1.5; }
+  .qa .a::before { content: "→ "; color: var(--accent-bronze); font-weight: 600; }
+
+  .note-strip {
+    margin-top: 20px;
+    border-left: 3px solid var(--accent-bronze);
+    background: var(--bg-muted);
+    padding: 14px 18px;
+    font-size: 12.5px;
+    color: var(--text-muted);
+  }
+  .note-strip b { color: var(--text); }
+
+  .pagefoot {
+    position: absolute;
+    bottom: 12mm; left: 18mm; right: 18mm;
+    display: flex; justify-content: space-between;
+    font-size: 9.5px; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--text-soft);
+    border-top: 1px solid var(--border);
+    padding-top: 8px;
+  }
+
+  .step {
+    margin-top: 18px;
+    background: var(--dark);
+    border-radius: 4px;
+    padding: 22px 26px;
+    color: #f3efe9;
+  }
+  .step .serif { color: var(--lime); font-size: 24px; display:block; margin-bottom: 8px; }
+  .step p { color: #d8d3ca; font-size: 13px; margin: 0; }
+
+  @media screen { body { padding: 16px 0; } }
+
+  @page { size: A4; margin: 0; }
+  @media print {
+    body { background: #fff; padding: 0; }
+    .page { margin: 0; box-shadow: none; page-break-after: always; }
+    .page:last-child { page-break-after: auto; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== PAGE 1 — COVER ===== -->
+<section class="page cover">
+  <div class="cover-top"><img src="images/logo/logo-pro.png" alt="3ДТЕМА"></div>
+  <div class="cover-hero" style="background-image:url('images/liquid-metal/liquid-main.jpg');"></div>
+  <div class="cover-body">
+    <div class="kicker">Гид для партнёра</div>
+    <h1 class="serif">Авторские металлы<br>и декоративные покрытия</h1>
+    <p class="lead">Что это такое и как это продавать вашим клиентам. Премиум-фасады с ручной финишной обработкой — для тех, кто ищет не «как у всех».</p>
+    <div class="cover-meta"><b>5 покрытий</b> &nbsp;•&nbsp; ручная работа &nbsp;•&nbsp; от 1 м² &nbsp;•&nbsp; премиум-сегмент</div>
+  </div>
+</section>
+
+<!-- ===== PAGE 2 — ЧТО ЭТО ===== -->
+<section class="page">
+  <div class="kicker">01 — За 30 секунд</div>
+  <h2 class="section-title serif">Что это за линейка</h2>
+  <p class="section-sub">Пять самостоятельных техник декоративной отделки фасадов. Их можно применять по отдельности или сочетать в одном изделии.</p>
+
+  <div class="prod">
+    <div class="thumb"><img src="images/liquid-metal/liquid-gold.jpg" alt=""></div>
+    <div><div class="pname serif">Жидкий металл</div><div class="pdesc">Настоящий металл (до 95% пудры) на фасаде. 4 цвета. Самое «вау».</div></div>
+    <div class="price">от 33 000 ₽<small>за м²</small></div>
+  </div>
+  <div class="prod">
+    <div class="thumb"><img src="images/water-metal/water-main.jpg" alt=""></div>
+    <div><div class="pname serif">Водный металл</div><div class="pdesc">Эффект металла на водной основе. Практичнее эмали, меньше следов от пальцев.</div></div>
+    <div class="price">от 19 800 ₽<small>за м²</small></div>
+  </div>
+  <div class="prod">
+    <div class="thumb"><img src="images/oils/oil-leonardo-1.jpg" alt=""></div>
+    <div><div class="pname serif">Декоративные масла</div><div class="pdesc">Ручное состаривание. 3 оттенка × 3 фактуры. Глубокая тактильная поверхность.</div></div>
+    <div class="price">по запросу<small>цена</small></div>
+  </div>
+  <div class="prod">
+    <div class="thumb"><img src="images/potal/potal-1.jpg" alt=""></div>
+    <div><div class="pname serif">Поталь Крепа</div><div class="pdesc">Листовое золочение/серебрение. Антикварная эстетика, незаметная реставрация.</div></div>
+    <div class="price">по запросу<small>цена</small></div>
+  </div>
+  <div class="prod">
+    <div class="thumb"><img src="images/inlay/inlay-example.jpg" alt=""></div>
+    <div><div class="pname serif">Инкрустация и фрезеровка</div><div class="pdesc">Фигуры, узоры, логотипы — металлом или фрезеровкой под патину. Персонализация.</div></div>
+    <div class="price">за элемент<small>расчёт</small></div>
+  </div>
+
+  <div class="bigidea">
+    <span class="serif">Это не отделка — это арт-объект.</span>
+    <p>Каждый фасад проходит ручную финишную обработку, поэтому он уникален и буквально неповторим. Для клиента это не «крашеный МДФ», а авторская работа со статусом и характером.</p>
+  </div>
+
+  <div class="pagefoot"><span>3ДТЕМА — гид для партнёра</span><span>02</span></div>
+</section>
+
+<!-- ===== PAGE 3 — КОМУ ПРОДАВАТЬ ===== -->
+<section class="page">
+  <div class="kicker">02 — Целевой клиент</div>
+  <h2 class="section-title serif">Кому это продавать</h2>
+  <p class="section-sub">Покрытия работают там, где клиент готов доплатить за индивидуальность и эмоцию. Это премиум и бизнес-сегмент, а не масс-маркет.</p>
+
+  <div class="cols">
+    <div class="card">
+      <h3>Кто покупает</h3>
+      <ul class="clean">
+        <li>Дизайнеры интерьера — ищут «изюминку» под концепцию проекта</li>
+        <li>Клиенты на ремонте «под ключ», уставшие от глянца и пластика</li>
+        <li>Те, кто хочет эксклюзив «не как у всех», статусность</li>
+        <li>Заказчики коммерческих интерьеров — бутики, отели, рестораны, офисы</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Где применять</h3>
+      <ul class="clean">
+        <li>Кухня — остров, верхние фасады, фартук-стена (не рабочая зона)</li>
+        <li>Гардеробные и шкафы — фасады, вставки</li>
+        <li>ТВ-зоны, акцентные стены и двери</li>
+        <li>Ресепшены, барные стойки, входные группы</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="note-strip">
+    <b>Сигналы «горячего» клиента:</b> «хочу что-то необычное», «дорого-богато», «как в бутике / отеле», «надоело всё одинаковое». Если слышите это — предлагайте металлы первыми.
+  </div>
+
+  <h3 style="margin-top:22px;">Сегменты, под которые легко зайти</h3>
+  <div class="tag-row">
+    <span class="tag">Премиум-кухни</span>
+    <span class="tag">Дизайн-проекты</span>
+    <span class="tag">Гардеробные</span>
+    <span class="tag">Акцентные двери</span>
+    <span class="tag">HoReCa</span>
+    <span class="tag">Офисы / ресепшен</span>
+    <span class="tag">Арт-объекты</span>
+  </div>
+
+  <div class="pagefoot"><span>3ДТЕМА — гид для партнёра</span><span>03</span></div>
+</section>
+
+<!-- ===== PAGE 4 — ПОЧЕМУ ПОКУПАЮТ ===== -->
+<section class="page">
+  <div class="kicker">03 — Аргументы</div>
+  <h2 class="section-title serif">Почему это покупают</h2>
+  <p class="section-sub">Решение о покупке премиум-отделки — на 70% эмоция и на 30% рацио. Давайте и то, и другое.</p>
+
+  <div class="cols gap-lg">
+    <div class="card">
+      <h3>Эмоция (продаёт)</h3>
+      <ul class="clean">
+        <li><strong>Эксклюзив и статус</strong> — авторская ручная работа, повтор «один в один» невозможен</li>
+        <li><strong>Живая поверхность</strong> — глубина, игра света, патина в рельефе</li>
+        <li><strong>Тактильность</strong> — фасад хочется потрогать, это «дорого» на ощупь</li>
+        <li><strong>История</strong> — техники золочения и патины родом из эпохи Возрождения</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Рацио (закрывает сомнения)</h3>
+      <ul class="clean">
+        <li><strong>Настоящий металл</strong> в жидком металле — не плёнка, не имитация</li>
+        <li><strong>Защита в цене</strong> — лак/воск от окисления уже включены (жидкий металл)</li>
+        <li><strong>Реставрируется</strong> — поталь чинится незаметно, стыки заложены в эстетику</li>
+        <li><strong>Практичнее эмали</strong> — на водном металле меньше видно следов от пальцев</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="bigidea">
+    <span class="serif">Продавайте уникальность, а не квадратные метры.</span>
+    <p>Главный аргумент, которого нет у конкурентов: двух одинаковых фасадов не существует. Для клиента это не минус («вдруг будет по-разному»), а ценность — у него будет вещь, которой больше нет ни у кого.</p>
+  </div>
+
+  <div class="pagefoot"><span>3ДТЕМА — гид для партнёра</span><span>04</span></div>
+</section>
+
+<!-- ===== PAGE 5 — КАК ПРОДАВАТЬ ===== -->
+<section class="page">
+  <div class="kicker">04 — Приёмы и сценарии</div>
+  <h2 class="section-title serif">Как продавать</h2>
+  <p class="section-sub">Несколько рабочих приёмов, которые повышают конверсию и средний чек без давления на клиента.</p>
+
+  <div class="card" style="margin-bottom:16px;">
+    <h3>Продавайте акцент, а не «всё в металле»</h3>
+    <p style="font-size:12.5px;color:var(--text-muted);margin:0;">Один остров, несколько фасадов или входные двери в металле — чек ниже, решение клиент принимает легче, а «вау-эффект» сохраняется. От 1 м² — можно начать с малого.</p>
+  </div>
+
+  <div class="cols" style="margin-bottom:16px;">
+    <div class="card muted">
+      <h3>Связки и апселлы</h3>
+      <ul class="clean">
+        <li>Металл + инкрустация шпона — тепло дерева и холод металла в одном фасаде</li>
+        <li>Фрезеровка под патину на эмали — недорого, а выглядит дорого</li>
+        <li>Логотип или монограмма клиента инкрустацией — персонализация premium</li>
+      </ul>
+    </div>
+    <div class="card muted">
+      <h3>Снимайте страх</h3>
+      <ul class="clean">
+        <li>«Начнём с образца» — клиент видит и трогает до заказа (7–10 дней)</li>
+        <li>Запуск — только по согласованному образцу: никаких сюрпризов</li>
+        <li>Покажите живой образец или фото — материал продаёт себя сам</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="note-strip">
+    <b>Скрипт-связка:</b> «Давайте сделаем акцентными только фасады острова — это впишется в бюджет, но кухня будет смотреться как из дизайн-журнала. Сначала закажем образец вашего цвета, чтобы вы увидели вживую».
+  </div>
+
+  <div class="pagefoot"><span>3ДТЕМА — гид для партнёра</span><span>05</span></div>
+</section>
+
+<!-- ===== PAGE 6 — ВОЗРАЖЕНИЯ + ЦЕНА + ШАГ ===== -->
+<section class="page">
+  <div class="kicker">05 — Возражения, цена, следующий шаг</div>
+  <h2 class="section-title serif">Закрываем сделку</h2>
+
+  <div class="card" style="margin-bottom:16px;">
+    <h3>Ответы на типичные возражения</h3>
+    <div class="qa"><div class="q">Дорого</div><div class="a">Не нужно весь гарнитур — достаточно акцента. От 1 м², можно вписать в любой бюджет. Начните с образца.</div></div>
+    <div class="qa"><div class="q">А это практично?</div><div class="a">Для фасадов — отлично, уход как у обычной эмали. Не для столешниц и фартуков (рабочие зоны).</div></div>
+    <div class="qa"><div class="q">Не потускнеет, не окислится?</div><div class="a">Защита включена: жидкий металл — лак или воск; поталь — обязательный лак контролирует окисление и стабилизирует цвет.</div></div>
+    <div class="qa"><div class="q">А если потом повторить / доделать?</div><div class="a">Ручная работа, каждый фасад уникален — это ценность, а не риск. Запуск по согласованному образцу, поталь к тому же легко реставрируется.</div></div>
+  </div>
+
+  <div class="cols">
+    <div class="card">
+      <h3>Как формируется цена</h3>
+      <ul class="clean">
+        <li>Цена «от» — за <strong>гладкий фасад</strong></li>
+        <li>Наценка — за фрезеровку, фактуру, брашировку, инкрустацию</li>
+        <li>Финальный расчёт — по площади фасадов и сложности геометрии</li>
+        <li>Масла, поталь, инкрустация — расчёт по проекту</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Что важно проговорить</h3>
+      <ul class="clean">
+        <li>Минимальный заказ — от 1 м²</li>
+        <li>Образец — ~7–10 дней</li>
+        <li>Запуск — только после согласования образца</li>
+        <li>Покрытия декоративные — не для рабочих поверхностей</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="step">
+    <span class="serif">Следующий шаг</span>
+    <p>Запросите у нас образец в нужном цвете и расчёт по проекту клиента. Образец на руках снимает 90% сомнений и продаёт сам. Каталог с фото всех покрытий — по запросу у вашего менеджера 3ДТЕМА.</p>
+  </div>
+
+  <div class="pagefoot"><span>3ДТЕМА — premium-фасады с ручной обработкой</span><span>3dtema.pro</span></div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,1540 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Премиальные решения для интерьеров — Premium Collection 2026 | 3ДТЕМА</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600&family=Onest:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --bg-card: #ffffff;
+    --bg-muted: #f3efe9;
+    --text: #1a1a1a;
+    --text-muted: #6b6b6b;
+    --text-soft: #8a8478;
+    --border: #e8e2d8;
+    --border-strong: #d4cabb;
+    --accent-bronze: #b8784a;
+    --accent-gold: #c9a961;
+    --accent-copper: #c47b56;
+    --accent-tin: #9aa0a3;
+    --accent-deep: #5c4631;
+    --shadow: 0 2px 24px rgba(60, 40, 20, 0.06);
+    --shadow-hover: 0 4px 32px rgba(60, 40, 20, 0.12);
+    --radius: 4px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .serif { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 400; }
+
+  /* ---------- LOGO BAR ---------- */
+  .logo-bar {
+    background: #25232a;
+    padding: 18px 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .logo-bar img {
+    height: 32px;
+    width: auto;
+    display: block;
+  }
+
+  /* ---------- HEADER ---------- */
+  .header {
+    padding: 56px 24px 48px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+    background: linear-gradient(180deg, #f7f2ea 0%, var(--bg) 100%);
+  }
+
+  .header h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: clamp(36px, 5vw, 56px);
+    line-height: 1.15;
+    margin-bottom: 16px;
+    letter-spacing: -0.01em;
+  }
+
+  .header .subtitle {
+    color: var(--text-muted);
+    font-size: 17px;
+    max-width: 640px;
+    margin: 0 auto;
+    line-height: 1.55;
+  }
+
+  .header .meta {
+    margin-top: 32px;
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--text-soft);
+  }
+
+  /* ---------- NAV ---------- */
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 24px;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    backdrop-filter: blur(8px);
+    background: rgba(251, 250, 248, 0.92);
+  }
+
+  .nav a {
+    text-decoration: none;
+    color: var(--text);
+    padding: 8px 16px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    transition: all 0.2s ease;
+  }
+
+  .nav a:hover {
+    border-color: var(--accent-bronze);
+    color: var(--accent-bronze);
+  }
+
+  /* ---------- INTRO ---------- */
+  .intro {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 72px 24px 32px;
+  }
+
+  .intro p {
+    font-size: 18px;
+    color: var(--text);
+    line-height: 1.7;
+    margin-bottom: 16px;
+  }
+
+  .intro p.lead {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--accent-deep);
+    line-height: 1.5;
+    margin-bottom: 32px;
+  }
+
+  /* ---------- SECTION ---------- */
+  .section {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 24px;
+    border-top: 1px solid var(--border);
+  }
+
+  .section-label {
+    font-size: 12px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--accent-bronze);
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+
+  .section h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: clamp(36px, 4.5vw, 52px);
+    line-height: 1.1;
+    margin-bottom: 24px;
+    letter-spacing: -0.01em;
+  }
+
+  .section .tagline {
+    font-size: 18px;
+    color: var(--text-muted);
+    max-width: 720px;
+    margin-bottom: 48px;
+    line-height: 1.6;
+  }
+
+  /* ---------- HERO IMAGE ---------- */
+  .hero-img {
+    width: 100%;
+    aspect-ratio: 16 / 8;
+    background: var(--bg-muted);
+    border-radius: var(--radius);
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 48px;
+    border: 1px solid var(--border);
+  }
+
+  .hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .hero-img::after {
+    content: attr(data-placeholder);
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-soft);
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    background: var(--bg-muted);
+    z-index: -1;
+  }
+
+  .hero-img img:not([src]),
+  .hero-img img[src=""] { display: none; }
+
+  .hero-img img { z-index: 1; position: relative; }
+
+  /* fallback: when image fails to load */
+  .hero-img img {
+    background: var(--bg-muted);
+  }
+
+  /* ---------- FACT STRIP ---------- */
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    margin-bottom: 56px;
+    overflow: hidden;
+  }
+
+  .fact {
+    background: var(--bg-card);
+    padding: 24px 28px;
+  }
+
+  .fact .label {
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--text-soft);
+    margin-bottom: 8px;
+  }
+
+  .fact .value {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    color: var(--text);
+    line-height: 1.2;
+    font-weight: 400;
+  }
+
+  .fact .value .unit {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-left: 4px;
+  }
+
+  /* ---------- CONTENT BLOCKS ---------- */
+  .content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    margin-bottom: 56px;
+  }
+
+  @media (max-width: 768px) {
+    .content-grid { grid-template-columns: 1fr; gap: 32px; }
+  }
+
+  .block h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: 26px;
+    margin-bottom: 16px;
+    color: var(--accent-deep);
+  }
+
+  .block p {
+    color: var(--text);
+    margin-bottom: 12px;
+    line-height: 1.65;
+  }
+
+  .block ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .block ul li {
+    padding: 8px 0 8px 24px;
+    position: relative;
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .block ul li:last-child { border-bottom: none; }
+
+  .block ul li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: var(--accent-bronze);
+  }
+
+  .block ul.x li::before {
+    content: "✕";
+    color: var(--text-soft);
+    font-size: 12px;
+    top: 10px;
+  }
+
+  /* ---------- COLOR PALETTE ---------- */
+  .palette {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    margin-bottom: 48px;
+  }
+
+  .color-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: all 0.2s ease;
+  }
+
+  .color-card:hover {
+    border-color: var(--accent-bronze);
+    box-shadow: var(--shadow-hover);
+  }
+
+  .color-swatch {
+    aspect-ratio: 4 / 3;
+    background: var(--bg-muted);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .color-swatch img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .color-swatch.gold { background: linear-gradient(135deg, #d4b572 0%, #b08d44 50%, #d4b572 100%); }
+  .color-swatch.bronze { background: linear-gradient(135deg, #a67248 0%, #7a4f2c 50%, #a67248 100%); }
+  .color-swatch.copper { background: linear-gradient(135deg, #c47b56 0%, #8a4d33 50%, #c47b56 100%); }
+  .color-swatch.tin { background: linear-gradient(135deg, #b0b4b6 0%, #7a7e80 50%, #b0b4b6 100%); }
+  .color-swatch.titanium { background: linear-gradient(135deg, #6b6e72 0%, #3a3c3e 50%, #6b6e72 100%); }
+  .color-swatch.old-copper { background: linear-gradient(135deg, #8b5a3c 0%, #4a3020 50%, #8b5a3c 100%); }
+  .color-swatch.leonardo { background: linear-gradient(135deg, #c9a961 0%, #6b5430 50%, #c9a961 100%); }
+  .color-swatch.botticelli { background: linear-gradient(135deg, #b8b8b8 0%, #5a5a5a 50%, #b8b8b8 100%); }
+  .color-swatch.cimabue { background: linear-gradient(135deg, #d4c39a 0%, #8a7950 50%, #d4c39a 100%); }
+  .color-swatch.potal-gold { background: linear-gradient(135deg, #e6c97a 0%, #b08d44 50%, #e6c97a 100%); }
+  .color-swatch.potal-silver { background: linear-gradient(135deg, #d8d8d8 0%, #909090 50%, #d8d8d8 100%); }
+  .color-swatch.potal-copper { background: linear-gradient(135deg, #d4825a 0%, #8a4a30 50%, #d4825a 100%); }
+
+  .color-info {
+    padding: 16px 18px;
+  }
+
+  .color-info .name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+
+  .color-info .desc {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.4;
+  }
+
+  /* ---------- TEXTURE GRID ---------- */
+  .texture-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-bottom: 48px;
+  }
+
+  .texture-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: all 0.2s ease;
+  }
+
+  .texture-card:hover {
+    border-color: var(--accent-bronze);
+    box-shadow: var(--shadow-hover);
+  }
+
+  .texture-img {
+    aspect-ratio: 4 / 3;
+    background: var(--bg-muted);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .texture-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .texture-img::after {
+    content: attr(data-placeholder);
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-soft);
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 16px;
+  }
+
+  .texture-img img { z-index: 2; position: relative; }
+
+  .texture-info {
+    padding: 16px 20px;
+  }
+
+  .texture-info .name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+
+  .texture-info .desc {
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+
+  /* ---------- CARE PANEL ---------- */
+  .care-panel {
+    background: var(--bg-muted);
+    border-radius: var(--radius);
+    padding: 32px 36px;
+    margin-bottom: 48px;
+    border-left: 3px solid var(--accent-bronze);
+  }
+
+  .care-panel h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    margin-bottom: 12px;
+    color: var(--accent-deep);
+  }
+
+  .care-panel p { margin-bottom: 8px; color: var(--text); }
+
+  /* ---------- NOTE ---------- */
+  .note {
+    font-size: 14px;
+    color: var(--text-muted);
+    background: var(--bg-card);
+    border: 1px dashed var(--border-strong);
+    padding: 20px 24px;
+    border-radius: var(--radius);
+    line-height: 1.55;
+    font-style: italic;
+  }
+
+  .note strong {
+    color: var(--accent-deep);
+    font-style: normal;
+  }
+
+  /* ---------- COMMON CONDITIONS ---------- */
+  .common {
+    background: linear-gradient(180deg, #f7f2ea 0%, var(--bg) 100%);
+    padding: 72px 24px;
+    margin-top: 64px;
+    border-top: 1px solid var(--border);
+  }
+
+  .common-inner {
+    max-width: 880px;
+    margin: 0 auto;
+  }
+
+  .common h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .common-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 32px;
+  }
+
+  .common-item {
+    text-align: center;
+  }
+
+  .common-item .num {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 48px;
+    color: var(--accent-bronze);
+    line-height: 1;
+    margin-bottom: 12px;
+  }
+
+  .common-item h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    margin-bottom: 8px;
+    color: var(--text);
+    font-weight: 500;
+  }
+
+  .common-item p {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.55;
+  }
+
+  /* ---------- FOOTER ---------- */
+  .footer {
+    background: #1a1612;
+    color: #b8a890;
+    padding: 56px 24px 32px;
+    text-align: center;
+  }
+
+  .footer .footer-brand {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer .footer-brand img {
+    height: 36px;
+    width: auto;
+    display: block;
+  }
+
+  .footer p {
+    font-size: 14px;
+    color: #8a7a60;
+    margin-bottom: 8px;
+  }
+
+  /* ---------- SAMPLES BLOCK ---------- */
+  .samples-block {
+    background: linear-gradient(135deg, #f3efe5 0%, #ebe4d4 100%);
+    border-radius: var(--radius);
+    padding: 56px 48px;
+    margin: 64px auto;
+    max-width: 1100px;
+    border: 1px solid var(--border-strong);
+    scroll-margin-top: 80px;
+  }
+  .samples-block h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: clamp(28px, 4vw, 40px);
+    line-height: 1.15;
+    color: var(--accent-deep);
+    margin-bottom: 12px;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 1px;
+  }
+  .samples-block .lead-italic {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 19px;
+    color: var(--text);
+    margin-bottom: 28px;
+    max-width: 720px;
+    line-height: 1.55;
+  }
+  .samples-block ul.checks {
+    list-style: none; padding: 0; margin-bottom: 28px;
+  }
+  .samples-block ul.checks li {
+    padding: 10px 0 10px 28px;
+    position: relative;
+    color: var(--text);
+    line-height: 1.55;
+    font-size: 15px;
+  }
+  .samples-block ul.checks li::before {
+    content: "+";
+    position: absolute;
+    left: 0;
+    color: var(--accent-bronze);
+    font-weight: 500;
+    font-size: 18px;
+    top: 8px;
+  }
+  .samples-block .callout {
+    background: rgba(255,255,255,0.6);
+    border-left: 2px solid var(--accent-bronze);
+    padding: 18px 24px;
+    margin-bottom: 24px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--text);
+  }
+  .samples-block .warn {
+    border: 1px dashed var(--border-strong);
+    padding: 18px 24px;
+    background: rgba(255,255,255,0.4);
+  }
+  .samples-block .warn-title {
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent-deep);
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    margin-bottom: 10px;
+  }
+
+  /* ---------- PARTNERS SECTION ---------- */
+  .partners {
+    background: #1a1612;
+    color: #d8cdb8;
+    padding: 80px 24px;
+    border-top: 1px solid var(--border);
+  }
+  .partners-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .partners .badge {
+    font-size: 12px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: #c8e000;
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+  .partners h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 300;
+    font-size: clamp(36px, 5vw, 54px);
+    line-height: 1.1;
+    margin-bottom: 16px;
+    color: #f3efe5;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 1px;
+  }
+  .partners .lead-p {
+    font-size: 17px;
+    color: #b8a890;
+    max-width: 680px;
+    margin-bottom: 48px;
+    line-height: 1.6;
+  }
+  .partners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-bottom: 32px;
+  }
+  .partners-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: var(--radius);
+    padding: 28px 30px;
+  }
+  .partners-card h3 {
+    font-family: 'Onest', 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #f3efe5;
+    margin-bottom: 16px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 1px;
+    display: inline-block;
+  }
+  .partners-card ul {
+    list-style: none; padding: 0; margin: 0;
+  }
+  .partners-card ul li {
+    padding: 8px 0 8px 22px;
+    position: relative;
+    color: #d8cdb8;
+    line-height: 1.55;
+    font-size: 14px;
+  }
+  .partners-card ul li::before {
+    content: "+";
+    position: absolute;
+    left: 0;
+    color: #c8e000;
+    font-weight: 500;
+  }
+  .partners-card ul.cross li::before { content: "×"; color: #9c9466; }
+  .partners-card strong { color: #f3efe5; }
+  .partners-signal {
+    background: rgba(200,224,0,0.08);
+    border: 1px dashed rgba(200,224,0,0.4);
+    border-radius: var(--radius);
+    padding: 20px 26px;
+    margin-top: 32px;
+  }
+  .partners-signal .sig-title {
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #c8e000;
+    font-weight: 500;
+    margin-bottom: 8px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    display: inline-block;
+  }
+  .partners-next {
+    background: rgba(243,239,229,0.06);
+    border-left: 3px solid #c8e000;
+    padding: 20px 28px;
+    margin-top: 32px;
+  }
+  .partners-next .nx-title {
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #f3efe5;
+    font-weight: 500;
+    margin-bottom: 8px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    display: inline-block;
+  }
+
+  /* ---------- PRINT ---------- */
+  @media print {
+    .nav { display: none; }
+    .section, .common, .header, .intro, .footer, .logo-bar { page-break-inside: avoid; }
+    .section { padding: 32px 0; }
+    body { font-size: 12pt; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===================== LOGO BAR ===================== -->
+<div class="logo-bar">
+  <img src="images/logo/logo-pro.png" alt="3ДТЕМА">
+</div>
+
+<!-- ===================== HEADER ===================== -->
+<header class="header">
+  <div style="font-size:12px;letter-spacing:0.32em;text-transform:uppercase;color:var(--accent-bronze);margin-bottom:18px;font-weight:500;">Premium Collection 2026</div>
+  <h1>Премиальные<br>решения для интерьеров</h1>
+  <p class="subtitle">Линейка из шести авторских техник, которые превращают мебельный фасад из утилитарной детали в самостоятельный декоративный объект. Все покрытия наносятся вручную — каждая поверхность приобретает индивидуальную фактуру и неповторимый характер.</p>
+  <div class="meta">Опт &nbsp;•&nbsp; Розница &nbsp;•&nbsp; От 1 м²</div>
+</header>
+
+<!-- ===================== NAV ===================== -->
+<nav class="nav">
+  <a href="#liquid">Жидкий металл</a>
+  <a href="#water">Водный металл</a>
+  <a href="#veneer">Вставки из шпона</a>
+  <a href="#oils">Декоративные масла</a>
+  <a href="#potal">Поталь CREPA</a>
+  <a href="#inlay">Вставки из металла</a>
+  <a href="#milling">Фрезеровка под патину</a>
+  <a href="#samples">Пилотные образцы</a>
+  <a href="#common">Условия</a>
+  <a href="#partners">Партнёрам</a>
+</nav>
+
+<!-- ===================== INTRO ===================== -->
+<section class="intro">
+  <p class="lead">Линейка покрытий, которые превращают мебельный фасад из утилитарной детали в самостоятельный декоративный объект.</p>
+  <p>Все материалы наносятся вручную. Это означает естественную вариативность — лёгкие следы располировки, неповторяющиеся стыки, патина в углублениях фрезеровки. Эти особенности заложены в эстетику материала и подтверждаются согласованным образцом перед запуском заказа.</p>
+  <p>Покрытия подходят для фасадов и декоративных панелей. Для рабочих поверхностей (столешниц, фартуков) — не рекомендуются: материалы создавались как декоративные.</p>
+</section>
+
+<!-- ===================== LIQUID METAL ===================== -->
+<section class="section" id="liquid">
+  <div class="section-label">01 — Покрытие на основе металла</div>
+  <h2>Жидкий металл</h2>
+  <p class="tagline">Декоративное покрытие на основе металлической пудры (до 95% состава) и полимерного связующего. После нанесения и располировки даёт настоящую металлическую поверхность.</p>
+
+  <div class="hero-img" data-placeholder="liquid-metal-hero.jpg">
+    <img src="images/liquid-metal/liquid-main.jpg" alt="Жидкий металл — главный кадр: олово, бронза, золото, медь">
+  </div>
+
+  <div class="facts">
+    <div class="fact">
+      <div class="label">Цена от</div>
+      <div class="value">33 000<span class="unit">₽ / м²</span></div>
+      <div style="margin-top:8px;font-size:12px;color:var(--text-soft);">на гладком фасаде</div>
+    </div>
+    <div class="fact">
+      <div class="label">Наценка за</div>
+      <div class="value serif" style="font-size:19px;line-height:1.3;">фрезеровку<br>и текстуру</div>
+      <div style="margin-top:8px;font-size:12px;color:var(--text-soft);">3 базовых или индивидуальная</div>
+    </div>
+    <div class="fact">
+      <div class="label">Образец</div>
+      <div class="value">≈ 7–10<span class="unit">дней</span></div>
+      <div style="margin-top:8px;font-size:12px;color:var(--text-soft);">300×400 / 200×200</div>
+    </div>
+    <div class="fact">
+      <div class="label">Минимум</div>
+      <div class="value">1<span class="unit">м²</span></div>
+    </div>
+  </div>
+
+  <h3 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:24px;margin-bottom:20px;color:var(--accent-deep);">Четыре базовых цвета</h3>
+  <div class="palette">
+    <div class="color-card">
+      <div class="color-swatch gold"><img src="images/liquid-metal/liquid-gold.jpg" alt="Золото — полированная поверхность"></div>
+      <div class="color-info"><div class="name">Золото</div><div class="desc">Тёплый, мягкий блеск</div></div>
+    </div>
+    <div class="color-card">
+      <div class="color-swatch bronze"><img src="images/liquid-metal/liquid-bronze.jpg" alt="Бронза — полированная поверхность"></div>
+      <div class="color-info"><div class="name">Бронза</div><div class="desc">Глубокий, благородный тон</div></div>
+    </div>
+    <div class="color-card">
+      <div class="color-swatch copper"><img src="images/liquid-metal/liquid-copper.jpg" alt="Медь — на 3D фасаде, полированная"></div>
+      <div class="color-info"><div class="name">Медь</div><div class="desc">Тёплый красновато-оранжевый</div></div>
+    </div>
+    <div class="color-card">
+      <div class="color-swatch tin"><img src="images/liquid-metal/liquid-tin.jpg" alt="Олово"></div>
+      <div class="color-info"><div class="name">Олово</div><div class="desc">Холодный графитово-серебристый</div></div>
+    </div>
+  </div>
+
+  <h3 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:24px;margin-bottom:8px;color:var(--accent-deep);">Доступные покрытия</h3>
+  <p style="color:var(--text-muted);margin-bottom:24px;max-width:720px;">На данный момент существует две степени подготовки изделия в жидком металле.</p>
+  <div class="content-grid">
+    <div class="block">
+      <h3>Полировка</h3>
+      <p>Применима только к гладким деталям и гладким деталям с текстурой, исполняется только на них. <strong>Полировка гладких изделий без текстуры имеет более высокий глянец</strong>, чем на изделиях с текстурой.</p>
+    </div>
+    <div class="block">
+      <h3>Шлифовка</h3>
+      <p>Доступна для гладких, гладких текстурных и <strong>объёмных 2D и 3D деталей</strong>. На сложной геометрии металл шлифуется полуматово.</p>
+    </div>
+  </div>
+  <p class="note" style="margin-bottom:48px;"><strong>Степень шлифовки и полировки</strong> зависит от конкретного изделия и может немного изменяться в зависимости от глубины и формы изделия.</p>
+
+  <h3 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:24px;margin-bottom:20px;color:var(--accent-deep);">На фрезерованных и 3D фасадах</h3>
+  <p style="color:var(--text-muted);margin-bottom:24px;max-width:720px;">На сложной геометрии металл шлифуется полуматово, а во фрезеровке остаются тёмные участки, похожие на эффект патины, который проявляется естественно во время ручной обработки.</p>
+  <div class="texture-grid">
+    <div class="texture-card">
+      <div class="texture-img" data-placeholder="золото на 3Д"><img src="images/liquid-metal/liquid-gold-3d.jpg" alt="Жидкий металл — золото на 3D фасаде"></div>
+      <div class="texture-info"><div class="name">Золото на 3D</div><div class="desc">Глубокая патина в рельефе</div></div>
+    </div>
+    <div class="texture-card">
+      <div class="texture-img" data-placeholder="бронза на 3Д"><img src="images/liquid-metal/liquid-bronze-3d.jpg" alt="Жидкий металл — бронза на 3D фасаде"></div>
+      <div class="texture-info"><div class="name">Бронза на 3D</div><div class="desc">Контрастная игра объёма</div></div>
+    </div>
+    <div class="texture-card">
+      <div class="texture-img" data-placeholder="олово на 3Д"><img src="images/liquid-metal/liquid-tin-3d.jpg" alt="Жидкий металл — олово на 3D фасаде"></div>
+      <div class="texture-info"><div class="name">Олово на 3D</div><div class="desc">Графитовый блеск с тенями</div></div>
+    </div>
+  </div>
+
+  <div class="content-grid">
+    <div class="block">
+      <h3>Применение</h3>
+      <ul>
+        <li>Гладкие фасады — глянец, шлифовка или авторские потёртости (полосы, круги, риски)</li>
+        <li>Фрезерованные фасады — шлифовка с тёмными участками во фрезеровке (нерасполированный металл, эффект патины)</li>
+        <li>Фактурные фасады и 2D / 3D панели</li>
+        <li>Арт-объекты, декоративные вставки</li>
+      </ul>
+    </div>
+    <div class="block">
+      <h3>Где не используется</h3>
+      <ul class="x">
+        <li>Столешницы, фартуки, рабочие поверхности — слишком интенсивная нагрузка для декоративного покрытия</li>
+        <li>Поверхности с прямым контактом с горячим, ножами, абразивами</li>
+      </ul>
+      <p style="margin-top:16px;font-size:14px;color:var(--text-muted);">На фасадах (двери, ящики, панели) покрытие ведёт себя безупречно — механические нагрузки минимальны.</p>
+    </div>
+  </div>
+
+  <h3 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:24px;margin-bottom:20px;color:var(--accent-deep);">Степень полировки и фактуры</h3>
+  <div class="content-grid">
+    <div class="block">
+      <p><strong>Гладкие фасады</strong> — глянец, шлифовка, авторские потёртости. Возможна располировка до зеркального блеска.</p>
+      <p><strong>Рельефные и фрезерованные</strong> — шлифовка, во фрезеровке остаются тёмные участки нерасполированного металла. Это эстетика, отсылающая к старинной патине: чем сложнее модель — тем выраженнее эффект.</p>
+      <p><strong>Штапик и сложная геометрия</strong> — итоговый вид близок к 3D с тёмными вкраплениями типа патины.</p>
+    </div>
+    <div class="block">
+      <p>В базовой линейке — <strong>3 фактуры</strong> с фиксированными названиями (формируются совместно с производством). Цена — фиксированная за каждую фактуру.</p>
+      <p>Возможно <strong>смешение цветов</strong> — наложение одного металла на другой даёт авторские градиенты и многослойные эффекты.</p>
+    </div>
+  </div>
+
+  <div class="care-panel">
+    <h3>Защита и уход</h3>
+    <p>Финишная защита входит в стоимость (33 000 ₽ / м²) и предотвращает окисление:</p>
+    <p>— <strong>Полиуретановый лак</strong> — высокая стойкость к истиранию и бытовой химии. Делает поверхность ближе к спецэффекту с глубиной.</p>
+    <p>— <strong>Воск</strong> — максимальная защита от влаги и бытовой химии при сохранении натуральной тактильности металла.</p>
+    <p>— <strong>Без защиты</strong> — поверхность остаётся в чистом виде, но возможно постепенное окисление (как у голой латуни).</p>
+    <p style="margin-top:12px;">Уход: мягкая губка или микрофибра, нейтральные моющие средства — без абразивов, кислот и щелочей.</p>
+  </div>
+
+  <div class="note">
+    <strong>Важно понимать:</strong> жидкий металл — ручная работа, каждый заказ уникален. Разнородная располировка, лёгкие риски и вкрапления — часть эстетики материала. При рекламациях точное воспроизведение фактуры и степени располировки может быть невозможным. Запуск заказа — только после согласования индивидуального образца.
+  </div>
+</section>
+
+<!-- ===================== WATER METAL ===================== -->
+<section class="section" id="water">
+  <div class="section-label">02 — Покрытие на водной основе</div>
+  <h2>Водный металл</h2>
+  <p class="tagline">Декоративное покрытие с эффектом металла на современной водной основе. Сочетает визуальную глубину металла и более экологичный состав. Это не металл как таковой (в отличие от жидкого металла), а особая техника нанесения спецэффекта.</p>
+
+  <div class="hero-img" data-placeholder="water-metal-hero.jpg">
+    <img src="images/water-metal/water-main.jpg" alt="Водный металл — главный кадр: старая бронза и титан">
+  </div>
+
+  <div class="facts">
+    <div class="fact">
+      <div class="label">Цена от</div>
+      <div class="value">19 800<span class="unit">₽ / м²</span></div>
+      <div style="margin-top:8px;font-size:12px;color:var(--text-soft);">на гладких фасадах без фрезеровки</div>
+    </div>
+    <div class="fact">
+      <div class="label">Наценка за</div>
+      <div class="value serif" style="font-size:19px;line-height:1.3;">фрезеровку,<br>2D и 3D фасады</div>
+    </div>
+    <div class="fact">
+      <div class="label">Образец</div>
+      <div class="value">≈ 7–10<span class="unit">дней</span></div>
+      <div style="margin-top:8px;font-size:12px;color:var(--text-soft);">300×400 / 200×200</div>
+    </div>
+    <div class="fact">
+      <div class="label">Минимум</div>
+      <div class="value">1<span class="unit">м²</span></div>
+    </div>
+  </div>
+
+  <h3 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:24px;margin-bottom:8px;color:var(--accent-deep);">Базовые цвета</h3>
+  <p style="color:var(--text-muted);margin-bottom:24px;max-width:780px;">Покрытие «Водный металл» доступно в <strong>12 базовых оттенках</strong>, которые открывают широкие возможности для создания как сдержанных, так и эффектных интерьерных решений. Ниже — два показательных образца, полная палитра у менеджеров.</p>
+  <div class="palette" style="grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));">
+    <div class="color-card">
+      <div class="color-swatch old-copper"><img src="images/water-metal/water-bronze.jpg" alt="Старая бронза — с брашировкой"></div>
+      <div class="color-info"><div class="name">Старая бронза</div><div class="desc">Тёплый коричнево-золотой блеск · образец с брашировкой</div></div>
+    </div>
+    <div class="color-card">
+      <div class="color-swatch titanium"><img src="images/water-metal/water-titanium.jpg" alt="Титан — с брашировкой"></div>
+      <div class="color-info"><div class="name">Титан</div><div class="desc">Глубокий графитовый блеск · образец с брашировкой</div></div>
+    </div>
+  </div>
+
+  <p class="note" style="margin-bottom:48px;"><strong>Важно:</strong> поверхность получается грубее, чем у эмали, и напоминает грубую матовую покраску — могут быть тактильно ощутимые вкрапления. Благодаря этому следов от пальцев остаётся заметно меньше, чем на обычной эмали. Базовый вариант изготавливается <strong>без брашировки, вставки шпона и лака</strong> — покрытие само по себе достаточно прочное. После нанесения матового лака эффект выглядит немного иначе. Возможно исполнение с брашировкой и без, со вставками шпона и защитным матовым лаком — за дополнительную плату.</p>
+
+  <!-- Veneer inserts feature -->
+  <div id="veneer" style="background:linear-gradient(135deg, #f7f2ea 0%, #efe7d8 100%); border-radius:var(--radius); padding:40px 44px; margin-bottom:48px; border:1px solid var(--border-strong); position:relative; overflow:hidden; scroll-margin-top:80px;">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:start;" class="inlay-grid">
+      <div>
+        <div style="font-size:12px; letter-spacing:0.28em; text-transform:uppercase; color:var(--accent-bronze); margin-bottom:12px; font-weight:500;">Дополнительная опция</div>
+        <h3 style="font-family:'Cormorant Garamond',serif; font-weight:500; font-size:32px; line-height:1.15; margin-bottom:14px; color:var(--accent-deep);">Вставки из шпона</h3>
+        <p style="color:var(--text-muted); line-height:1.6; margin-bottom:18px; font-size:14px; padding-left:14px; border-left:2px solid var(--accent-bronze);">Стоимость м² готового фасада со вставкой шпона (полоска любой формы и размера) рассчитывается по прайс-листу с учётом выбранного шпона.</p>
+        <p style="color:var(--text); line-height:1.7; margin-bottom:14px;">В фасад с водным металлом можно вставить <strong>любой вид шпона с открытыми порами под матовым лаком</strong>. Получается сочетание холодной металлической поверхности и тёплой натуральной древесины в одном изделии.</p>
+        <p style="color:var(--text); line-height:1.7;">Вставка выполняется отдельным этапом по уже готовому фасаду. Это позволяет точно контролировать совмещение материалов и геометрию рисунка.</p>
+      </div>
+      <div>
+        <h4 style="font-family:'Cormorant Garamond',serif; font-size:22px; margin-bottom:16px; color:var(--text);">Подробнее про вставки</h4>
+        <ul style="list-style:none; padding:0;">
+          <li style="padding:10px 0 10px 24px; position:relative; border-bottom:1px solid var(--border);">
+            <span style="position:absolute; left:0; color:var(--accent-bronze);">—</span>
+            <strong>Любая форма линий</strong> по эскизу заказчика (применяется наценка за отрисовку)
+          </li>
+          <li style="padding:10px 0 10px 24px; position:relative; border-bottom:1px solid var(--border);">
+            <span style="position:absolute; left:0; color:var(--accent-bronze);">—</span>
+            <strong>Стоимость шпона</strong> рассчитывается по прайсу
+          </li>
+          <li style="padding:10px 0 10px 24px; position:relative;">
+            <span style="position:absolute; left:0; color:var(--accent-bronze);">—</span>
+            Торцы вставки <strong>подкрашиваются морилкой</strong> — чистый, законченный край
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="texture-grid" style="margin-top:32px; margin-bottom:0;">
+      <div class="texture-card">
+        <div class="texture-img" data-placeholder="вставка шпона"><img src="images/water-metal/water-bronze-inlay.jpg" alt="Вставка шпона — старая бронза"></div>
+        <div class="texture-info"><div class="name">Старая бронза + шпон</div><div class="desc">Со шпоном и брашировкой</div></div>
+      </div>
+      <div class="texture-card">
+        <div class="texture-img" data-placeholder="вставка шпона экзотик"><img src="images/water-metal/water-bronze-inlay-exotic.jpg" alt="Вставка шпона экзотик — старая бронза"></div>
+        <div class="texture-info"><div class="name">Старая бронза + экзотик</div><div class="desc">Шпон редких пород</div></div>
+      </div>
+      <div class="texture-card">
+        <div class="texture-img" data-placeholder="титан + вставка шпона"><img src="images/water-metal/water-titanium-inlay.jpg" alt="Вставка шпона — титан"></div>
+        <div class="texture-info"><div class="name">Титан + шпон</div><div class="desc">Контраст металла и дерева</div></div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    @media (max-width: 768px) {
+      .inlay-grid { grid-template-columns: 1fr !important; gap: 24px !important; }
+    }
+  </style>
+
+  <div class="content-grid">
+    <div class="block">
+      <h3>Применение</h3>
+      <ul>
+        <li>Гладкие фасады — базовая поверхность без брашировки и вставки</li>
+        <li>Брашировка (продольное структурирование) — наценка к базовой цене</li>
+        <li>Фрезерованные фасады, 2D и 3D панели — наценка к базовой цене</li>
+        <li>Брашировка на фрезеровке — в большинстве случаев возможна, согласуется индивидуально</li>
+        <li>Вставка шпона по индивидуальному эскизу — наценка к цене</li>
+      </ul>
+    </div>
+    <div class="block">
+      <h3>Где не используется</h3>
+      <ul class="x">
+        <li>Столешницы, фартуки, рабочие поверхности — слишком интенсивная нагрузка для декоративного покрытия</li>
+        <li>Поверхности с прямым контактом с горячим, ножами, абразивами</li>
+      </ul>
+      <p style="margin-top:16px;font-size:14px;color:var(--text-muted);">Подходит для мебельных фасадов и декоративных панелей.</p>
+    </div>
+  </div>
+
+  <div class="care-panel">
+    <h3>Защита и уход</h3>
+    <p>— Для дополнительной защиты возможно нанесение <strong>акрилового лака</strong>. Он даёт небольшую глубину и слегка меняет оттенок и фактуру (при наличии брашировки).</p>
+    <p>— Без лака покрытие остаётся максимально приближённым к натуральному состоянию (водные компоненты) и обладает достаточно высокими эксплуатационными качествами, как обычная эмаль.</p>
+    <p>Уход: мягкая губка или микрофибра, нейтральные моющие средства — без абразивов, кислот и щелочей.</p>
+  </div>
+
+  <div class="note">
+    <strong>Чем отличается от жидкого металла:</strong> жидкий металл содержит до 95% реальной металлической пудры в составе. Водный металл — это декоративная техника нанесения спецэффекта с металлическим визуальным эффектом, но без металла в составе, на водной основе. Тактильно и визуально материалы разные — это два самостоятельных продукта в линейке.
+  </div>
+</section>
+
+<!-- ===================== DECORATIVE OILS ===================== -->
+<section class="section" id="oils">
+  <div class="section-label">03 — Покрытие на основе масла</div>
+  <h2>Декоративные масла</h2>
+  <p class="tagline">Премиум-покрытия с эффектом старения, которые сочетают эстетику, лёгкую текстуру, современный дизайн и приятную тактильность. Наносятся из краскопульта, затем тампонируются и растираются руками — отсюда индивидуальный характер каждого фасада.</p>
+
+  <div class="hero-img" data-placeholder="oils-hero.jpg">
+    <img src="images/oils/oil-leonardo-main.jpg" alt="Декоративные масла — главный кадр: Leonardo, мятая ткань">
+  </div>
+
+  <div class="facts">
+    <div class="fact">
+      <div class="label">Цена</div>
+      <div class="value serif" style="font-size:22px;">уточняется</div>
+      <div style="margin-top:8px;font-size:12px;color:var(--text-soft);">на гладких фасадах без фрезеровки</div>
+    </div>
+    <div class="fact">
+      <div class="label">Наценка за</div>
+      <div class="value serif" style="font-size:19px;line-height:1.3;">фрезеровку,<br>2D и 3D фасады</div>
+    </div>
+    <div class="fact">
+      <div class="label">Образец</div>
+      <div class="value">≈ 7–10<span class="unit">дней</span></div>
+      <div style="margin-top:8px;font-size:12px;color:var(--text-soft);">300×400 / 200×200</div>
+    </div>
+    <div class="fact">
+      <div class="label">Минимум</div>
+      <div class="value">1<span class="unit">м²</span></div>
+    </div>
+  </div>
+
+  <h3 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:24px;margin-bottom:8px;color:var(--accent-deep);">Текстуры и оттенки</h3>
+  <p style="color:var(--text-muted);margin-bottom:24px;max-width:780px;">Покрытие декоративными маслами доступно в <strong>13 цветах и 3 текстурах</strong>. Их можно комбинировать между собой, а при необходимости мы разработаем индивидуальную текстуру под проект. Эффекты достигаются при помощи одной из трёх базовых текстур — на него ложится масло и проявляется текстура.</p>
+
+  <div class="hero-img" data-placeholder="oils-palette-renner.jpg" style="aspect-ratio:auto; margin-bottom:16px;">
+    <img src="images/oils/oils-palette-renner.jpg" alt="Палитра декоративных масел Renner — 13 оттенков (Tiziano, Tintoretto, Raffaello, Michelangelo, Masaccio, Giotto, Leonardo, Cimabue, Boticelli, Caravaggio, Mantegna, Donatello)">
+  </div>
+  <p style="text-align:center;font-size:13px;letter-spacing:0.18em;text-transform:uppercase;color:var(--text-soft);margin-bottom:48px;">Доступные цвета · линейка Renner</p>
+
+  <p class="note" style="margin-bottom:48px;"><strong>Техника нанесения:</strong> масло наносится из краскопульта, затем тампонируется и растирается руками. Именно ручная фаза создаёт неповторимость каждой поверхности — два фасада в одном цвете и фактуре будут визуально близкими, но не идентичными. Это особенность премиум-линии.</p>
+
+  <h3 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:24px;margin-bottom:20px;color:var(--accent-deep);">Базовые оттенки в каталоге</h3>
+  <p style="color:var(--text-muted);margin-bottom:24px;max-width:720px;">Полная палитра из 13 оттенков — у менеджеров. В каталоге выделены три базовых, на которых отработаны наши фирменные текстуры:</p>
+  <div class="palette">
+    <div class="color-card">
+      <div class="color-swatch leonardo"><img src="images/oils/oil-leonardo-1.jpg" alt="Leonardo — старинное золото"></div>
+      <div class="color-info"><div class="name">Leonardo · Золото</div><div class="desc">Старинное золото, фактура «Мятая ткань»</div></div>
+    </div>
+    <div class="color-card">
+      <div class="color-swatch botticelli"><img src="images/oils/oil-boticelli-1.jpg" alt="Boticelli — старинное серебро"></div>
+      <div class="color-info"><div class="name">Boticelli · Серебро</div><div class="desc">Старинное серебро, фактура «Москито»</div></div>
+    </div>
+    <div class="color-card">
+      <div class="color-swatch cimabue"><img src="images/oils/oil-cimbue-1.jpg" alt="Cimbue — шампань"></div>
+      <div class="color-info"><div class="name">Cimbue · Шампань</div><div class="desc">Приглушённый золотой, фактура «Чешуя»</div></div>
+    </div>
+  </div>
+
+  <h3 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:24px;margin-bottom:20px;color:var(--accent-deep);">Три фактуры</h3>
+  <p style="color:var(--text-muted);margin-bottom:24px;max-width:720px;">Эффект старения достигается при помощи одной из трёх базовых фактур — на неё ложится масло и проявляется рисунок. Любая из трёх фактур накладывается на любой из 13 оттенков.</p>
+  <div class="texture-grid">
+    <div class="texture-card">
+      <div class="texture-img" data-placeholder="мятая ткань"><img src="images/oils/oil-leonardo-2.jpg" alt="Мятая ткань — фактура"></div>
+      <div class="texture-info"><div class="name">Мятая ткань</div><div class="desc">Мягкие складки, имитация драпировки</div></div>
+    </div>
+    <div class="texture-card">
+      <div class="texture-img" data-placeholder="москито"><img src="images/oils/oil-boticelli-2.jpg" alt="Москито — фактура"></div>
+      <div class="texture-info"><div class="name">Москито</div><div class="desc">Тонкая сетчатая структура</div></div>
+    </div>
+    <div class="texture-card">
+      <div class="texture-img" data-placeholder="чешуя"><img src="images/oils/oil-cimbue-2.jpg" alt="Чешуя — фактура"></div>
+      <div class="texture-info"><div class="name">Чешуя</div><div class="desc">Чешуйчатый рельеф с глубиной</div></div>
+    </div>
+  </div>
+
+  <h3 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:24px;margin-bottom:20px;color:var(--accent-deep);">В интерьере</h3>
+  <div class="content-grid">
+    <div class="hero-img" data-placeholder="leonardo в интерьере" style="margin-bottom:0; aspect-ratio:4/3;">
+      <img src="images/oils/oil-leonardo-interior.png" alt="Leonardo в интерьере">
+    </div>
+    <div class="hero-img" data-placeholder="boticelli в интерьере" style="margin-bottom:0; aspect-ratio:4/3;">
+      <img src="images/oils/oil-boticelli-interior.png" alt="Boticelli в интерьере">
+    </div>
+  </div>
+
+  <div class="content-grid">
+    <div class="block">
+      <h3>Применение</h3>
+      <ul>
+        <li>Гладкие фасады</li>
+        <li>Фрезерованные, 2D и 3D фасады — наценка к базовой цене</li>
+        <li>Любая из трёх фактур накладывается на любой из 13 оттенков</li>
+      </ul>
+    </div>
+    <div class="block">
+      <h3>Защита и уход</h3>
+      <p>Фасады в декоративных маслах требуют такого же ухода, как обычные эмалевые фасады: мягкая губка или микрофибра, нейтральные моющие средства. Без агрессивной химии и абразивов.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== POTAL ===================== -->
+<section class="section" id="potal">
+  <div class="section-label">04 — Листовая металлизация</div>
+  <h2>Поталь CREPA</h2>
+  <p class="tagline">Декорирование тончайшими листами металлического сплава — техника, известная с эпохи Возрождения. «CREPA» — крепированная (структурированная) поталь, в которой стыки и наложения листов остаются видимыми и формируют узнаваемый рисунок поверхности.</p>
+
+  <div class="hero-img" data-placeholder="potal-hero.jpg">
+    <img src="images/potal/potal-1.jpg" alt="Поталь CREPA — главный кадр">
+  </div>
+
+  <div class="facts">
+    <div class="fact">
+      <div class="label">Цена</div>
+      <div class="value serif" style="font-size:22px;">уточняется</div>
+      <div style="margin-top:8px;font-size:12px;color:var(--text-soft);">на гладких фасадах без фрезеровки</div>
+    </div>
+    <div class="fact">
+      <div class="label">Наценка за</div>
+      <div class="value serif" style="font-size:19px;line-height:1.3;">фрезеровку,<br>2D и 3D фасады</div>
+    </div>
+    <div class="fact">
+      <div class="label">Образец</div>
+      <div class="value">≈ 7–10<span class="unit">дней</span></div>
+      <div style="margin-top:8px;font-size:12px;color:var(--text-soft);">300×400 / 200×200</div>
+    </div>
+    <div class="fact">
+      <div class="label">Минимум</div>
+      <div class="value">1<span class="unit">м²</span></div>
+    </div>
+  </div>
+
+  <h3 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:24px;margin-bottom:20px;color:var(--accent-deep);">Что такое поталь</h3>
+  <p style="margin-bottom:16px;color:var(--text);max-width:780px;line-height:1.7;">Это тончайшие листы металлического сплава, толщиной порядка <strong>0,02 мм</strong>. Для золотых оттенков используют сплав <strong>меди и цинка</strong>, для серебряных — <strong>алюминий</strong>, для медных — <strong>чистую медь</strong>. Лист накладывается на специальный клеящий состав (мордан), после высыхания располировывается и закрепляется защитным лаком.</p>
+  <p style="margin-bottom:32px;color:var(--text);max-width:780px;line-height:1.7;">«CREPA» — это разновидность потали с морщинисто-структурированной поверхностью. Характерные стыки листов (~14×14 см), их наложения и микрорельеф формируют узнаваемую эстетику: поверхность выглядит как тщательно отреставрированная антикварная вещь, а не как ровное напыление.</p>
+
+  <h3 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:24px;margin-bottom:20px;color:var(--accent-deep);">Фактура поверхности</h3>
+  <div class="content-grid">
+    <div class="hero-img" data-placeholder="поталь крупно" style="margin-bottom:0; aspect-ratio:4/3;">
+      <img src="images/potal/potal-1.jpg" alt="Поталь Крепа — структура листов">
+    </div>
+    <div class="hero-img" data-placeholder="поталь крупно 2" style="margin-bottom:0; aspect-ratio:4/3;">
+      <img src="images/potal/potal-2.jpg" alt="Поталь Крепа — крупный план">
+    </div>
+  </div>
+
+  <h3 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:24px;margin:48px 0 8px;color:var(--accent-deep);">Базовые цвета</h3>
+  <p style="color:var(--text-muted);margin-bottom:24px;max-width:780px;">Покрытие поталью представлено в 3 базовых оттенках: золото, серебро и медь. Для реализации индивидуальных проектов мы можем подобрать цвет покрытия в соответствии с оттенком фурнитуры, сантехники или других элементов интерьера.</p>
+  <div class="palette">
+    <div class="color-card">
+      <div class="color-swatch potal-gold"></div>
+      <div class="color-info"><div class="name">Золото</div><div class="desc">Сплав меди и цинка</div></div>
+    </div>
+    <div class="color-card">
+      <div class="color-swatch potal-silver"></div>
+      <div class="color-info"><div class="name">Серебро</div><div class="desc">Алюминиевый лист</div></div>
+    </div>
+    <div class="color-card">
+      <div class="color-swatch potal-copper"></div>
+      <div class="color-info"><div class="name">Медь</div><div class="desc">Чистая медь</div></div>
+    </div>
+  </div>
+
+  <div class="content-grid">
+    <div class="block">
+      <h3>Применение</h3>
+      <ul>
+        <li>Фасады — гладкие и фрезерованные</li>
+        <li>Декоративные панели</li>
+        <li>Арт-объекты, рамы, акцентные вставки</li>
+        <li>Любые подготовленные поверхности — дерево, МДФ, гипс, металл</li>
+      </ul>
+    </div>
+    <div class="block">
+      <h3>Реставрация</h3>
+      <p>Одно из ключевых преимуществ потали — простота реставрации. Повреждённый участок переклеивается новым листочком сверху, после чего располировывается и покрывается лаком. Стыки и наложения уже заложены в эстетику материала, поэтому реставрация визуально незаметна.</p>
+    </div>
+  </div>
+
+  <div class="care-panel">
+    <h3>Защита и уход</h3>
+    <p>— <strong>Защитный лак обязателен и входит в цену</strong>. Без него металл (особенно медь и серебро) окисляется: медь зеленеет, серебро темнеет. Лак контролирует процесс и стабилизирует цвет.</p>
+    <p>— Возможен выбор потали как по металлу — золото, серебро, медь, так и по оттенку самого металла. Уточняйте наличие у менеджеров.</p>
+    <p>Уход: мягкая губка или микрофибра, нейтральные моющие средства — без абразивов, кислот и щелочей.</p>
+  </div>
+
+  <div class="note">
+    <strong>Особенность материала:</strong> стыки и наложения листочков — не дефект, а суть техники Крепа. Поверхность не должна выглядеть «бесшовно гладко» — наоборот, видимость структуры подчеркивает ручную работу и связывает изделие с традицией листовой металлизации. Это материал для тех, кто ценит характер поверхности больше, чем стерильность.
+  </div>
+</section>
+
+<!-- ===================== METAL INSERTS (бывшая Инкрустация) ===================== -->
+<section class="section" id="inlay">
+  <div class="section-label">05 — Декоративная техника</div>
+  <h2>Вставки из металла</h2>
+  <p class="tagline">Готовая металлическая фигура из нержавеющей стали врезается в фасад заподлицо с поверхностью. Возможна на крашеных и шпонированных фасадах, на плоских участках или подготовленных площадках во фрезеровке. Самостоятельная техника, которую можно сочетать с любым из покрытий выше — или применять отдельно.</p>
+
+  <div class="hero-img" data-placeholder="inlay-example.jpg">
+    <img src="images/inlay/inlay-example.jpg" alt="Вставки из металла — фигуры на шпонированном фасаде">
+  </div>
+
+  <div class="facts">
+    <div class="fact">
+      <div class="label">Материал</div>
+      <div class="value serif" style="font-size:22px;">нерж. сталь 1,2 мм</div>
+    </div>
+    <div class="fact">
+      <div class="label">Поверхность</div>
+      <div class="value serif" style="font-size:22px;">сатин<br>или полировка</div>
+    </div>
+    <div class="fact">
+      <div class="label">Расчёт</div>
+      <div class="value serif" style="font-size:22px;">за 1 элемент</div>
+    </div>
+    <div class="fact">
+      <div class="label">Образец</div>
+      <div class="value">≈ 7–10<span class="unit">дней</span></div>
+      <div style="margin-top:8px;font-size:12px;color:var(--text-soft);">300×400 / 200×200</div>
+    </div>
+  </div>
+
+  <h3 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:24px;margin-bottom:8px;color:var(--accent-deep);">Готовые фигуры из наличия</h3>
+  <p style="color:var(--text-muted);margin-bottom:24px;max-width:720px;">Базовый каталог — стилизованные природные сюжеты из нержавеющей стали 1,2 мм. Каждая фигура считается как один элемент. Под каждой указаны стандартный размер и покрытие — сатин или полировка.</p>
+  <div class="texture-grid">
+    <div class="texture-card">
+      <div class="texture-img"><img src="images/inlay/inlay-bird1-satin.jpg" alt="Птица 1 — сатин"></div>
+      <div class="texture-info"><div class="name">Птица 1</div><div class="desc">50 × 70 мм · сатин</div></div>
+    </div>
+    <div class="texture-card">
+      <div class="texture-img"><img src="images/inlay/inlay-bird2-polish.jpg" alt="Птица 2 — полировка"></div>
+      <div class="texture-info"><div class="name">Птица 2</div><div class="desc">50 × 70 мм · полировка</div></div>
+    </div>
+    <div class="texture-card">
+      <div class="texture-img"><img src="images/inlay/inlay-bird3-polish.jpg" alt="Птица 3 — полировка"></div>
+      <div class="texture-info"><div class="name">Птица 3</div><div class="desc">74 × 110 мм · полировка</div></div>
+    </div>
+    <div class="texture-card">
+      <div class="texture-img"><img src="images/inlay/inlay-hare-satin.jpg" alt="Заяц — сатин"></div>
+      <div class="texture-info"><div class="name">Заяц</div><div class="desc">50 × 70 мм · сатин</div></div>
+    </div>
+    <div class="texture-card">
+      <div class="texture-img"><img src="images/inlay/inlay-flower1-polish.jpg" alt="Цветок 1 — полировка"></div>
+      <div class="texture-info"><div class="name">Цветок 1</div><div class="desc">70 × 50 мм · полировка</div></div>
+    </div>
+    <div class="texture-card">
+      <div class="texture-img"><img src="images/inlay/inlay-flower2-polish.jpg" alt="Цветок 2 — полировка"></div>
+      <div class="texture-info"><div class="name">Цветок 2</div><div class="desc">70 × 58 мм · полировка</div></div>
+    </div>
+  </div>
+
+  <div class="content-grid">
+    <div class="block">
+      <h3>Куда инкрустируется</h3>
+      <ul>
+        <li>Любой крашеный фасад с плоским участком</li>
+        <li>Любой шпонированный фасад с плоским участком</li>
+        <li>Фрезерованные и 3D фасады — на специально подготовленной площадке (по той же технологии, что и под ручки в 3D-фасадах)</li>
+      </ul>
+    </div>
+    <div class="block">
+      <h3>Фигуры, надписи и логотипы на заказ</h3>
+      <p>Можно изготовить фигуру, надпись или логотип <strong>любой формы</strong> — как вставку из металла, так и прямую выемку в однотонной эмали или патине.</p>
+      <p>Исходник — готовый файл в любом векторном формате либо качественное изображение в большом разрешении. Авторский эскиз рисует технолог по референсу через услугу «Отрисовка»: <strong>сам элемент стоит как из наличия — наценка только за отрисовку.</strong> Нестандартная фрезеровка принимается после согласования с производством.</p>
+    </div>
+  </div>
+
+  <div class="care-panel">
+    <h3>Технология и порядок работ</h3>
+    <p>— Материал: <strong>нержавеющая сталь 1,2 мм</strong>. На выбор сатин или полировка — два разных характера поверхности.</p>
+    <p>— Фигура устанавливается <strong>после покраски или лакировки фасада</strong>. Это позволяет точно совместить кромки и избежать загрязнения металла в процессе финишной обработки.</p>
+    <p>— На 3D и фрезерованных фасадах под фигуру готовится отдельная площадка — техника та же, что мы используем для интегрированных ручек.</p>
+  </div>
+
+  <div class="note">
+    <strong>Совместимость с другими покрытиями:</strong> вставки из металла — самостоятельная техника. Её можно делать на простом крашеном фасаде, на фасаде с водным или жидким металлом, на шпоне. Каждое сочетание даёт свой характер — от лаконичного графичного силуэта на эмали до многослойной игры металлов с водным металлом и шпоном одновременно.
+  </div>
+</section>
+
+<!-- ===================== MILLING PATINA (отдельный раздел 06) ===================== -->
+<section class="section" id="milling">
+  <div class="section-label">06 — Декоративная техника · без металла</div>
+  <h2>Фрезеровка под патину</h2>
+  <p class="tagline">Здесь нет вставки из металла: рисунок <strong>фрезеруется прямо в фасаде</strong> и патинируется. Графика «утоплена» в поверхность, а не лежит на ней — другой характер, чем у вставок из металла. Считается как дополнительная опция к фасаду, по прайс-листу.</p>
+
+  <div class="hero-img" style="aspect-ratio:16/10;" data-placeholder="milling-flock-patina.jpg">
+    <img src="images/inlay/milling-flock-patina.jpg" alt="Фрезеровка «Стая» под патину на глянцевом фасаде">
+  </div>
+
+  <div class="facts">
+    <div class="fact">
+      <div class="label">Цена</div>
+      <div class="value serif" style="font-size:22px;">уточняется</div>
+      <div style="margin-top:8px;font-size:12px;color:var(--text-soft);">на гладких фасадах без фрезеровки</div>
+    </div>
+    <div class="fact">
+      <div class="label">Наценка за</div>
+      <div class="value serif" style="font-size:19px;line-height:1.3;">фрезеровку,<br>2D и 3D фасады</div>
+    </div>
+    <div class="fact">
+      <div class="label">Образец</div>
+      <div class="value">≈ 7–10<span class="unit">дней</span></div>
+      <div style="margin-top:8px;font-size:12px;color:var(--text-soft);">300×400 / 200×200</div>
+    </div>
+    <div class="fact">
+      <div class="label">Минимум</div>
+      <div class="value">1<span class="unit">м²</span></div>
+    </div>
+  </div>
+
+  <h3 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:24px;margin-bottom:20px;color:var(--accent-deep);">Готовый элемент «Стая»</h3>
+  <p style="color:var(--text-muted);margin-bottom:24px;max-width:780px;">300 × 400 мм, выполняется только в эмали или патине (без металла). Другие фигуры, надписи и логотипы — по тому же принципу прямой выемки. Нестандартная фрезеровка принимается после согласования с производством.</p>
+  <div class="palette" style="grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));">
+    <div class="color-card">
+      <div class="color-swatch" style="background:#f3efe5;"><img src="images/inlay/milling-flock-gold.jpg" alt="Стая — золото"></div>
+      <div class="color-info"><div class="name">Золото</div><div class="desc">Готовый элемент «Стая», золотая патина</div></div>
+    </div>
+    <div class="color-card">
+      <div class="color-swatch" style="background:#f3efe5;"><img src="images/inlay/milling-flock-silver.jpg" alt="Стая — серебро"></div>
+      <div class="color-info"><div class="name">Серебро</div><div class="desc">Готовый элемент «Стая», серебряная патина</div></div>
+    </div>
+  </div>
+
+  <div class="content-grid">
+    <div class="block">
+      <h3>Применение</h3>
+      <ul>
+        <li>Фасады в эмали, шпоне, плёнке ПВХ</li>
+        <li>Фрезеровку можно <strong>патинировать любым цветом</strong> — под задачу интерьера</li>
+        <li>Финиш на выбор — <strong>матовый или глянцевый лак</strong>, как при обычной патине</li>
+      </ul>
+    </div>
+    <div class="block">
+      <h3>Особенность техники</h3>
+      <p>Графика, утопленная в поверхность, ведёт себя иначе, чем металлическая вставка — это самостоятельный декоративный приём с собственным характером.</p>
+      <p>Можно делать готовые элементы каталога или индивидуальную графику — фигуры, узоры, надписи, логотипы.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PILOT SAMPLES ===================== -->
+<section class="samples-block" id="samples">
+  <div style="font-size:12px;letter-spacing:0.32em;text-transform:uppercase;color:var(--accent-bronze);margin-bottom:14px;font-weight:500;">Premium Collection 2026</div>
+  <h2>Условия изготовления пилотных образцов</h2>
+  <p class="lead-italic">«Пилотник» — пробный фасад в размере, необходимом заказчику для оценки (обычно 300×400 или 200×200).</p>
+
+  <ul class="checks">
+    <li>Стоимость <strong>одного пилотного образца</strong> любого покрытия, цвета и фактуры фиксирована и равна цене <strong>0,5 м²</strong> готового изделия. При заказе согласованного цвета вы получаете дополнительную <strong>скидку 25%</strong> на образец.</li>
+    <li>Вы можете заказать <strong>неограниченное количество пилотников</strong> для выбора идеального оттенка.</li>
+    <li>Итоговая скидка <strong>50% + 25%</strong> стоимости пилотника предоставляется только на один образец, цвет которого будет утверждён и запущен в производство.</li>
+  </ul>
+
+  <div class="callout">
+    При размещении заказа на партию фасадов вы указываете номер пилотного образца, который утверждён. Мы компенсируем <strong>ещё 25%</strong> от полной стоимости образца и зачитываем в оплату основного заказа (итого <strong>75%</strong>).
+  </div>
+
+  <div class="warn">
+    <div class="warn-title">Важно</div>
+    <div>Остальные образцы (не выбранные для заказа) остаются у вас и оплачиваются по полной стоимости (0,5 м² за штуку).</div>
+  </div>
+</section>
+
+<!-- ===================== COMMON CONDITIONS ===================== -->
+<section class="common" id="common">
+  <div class="common-inner">
+    <h2>Общие условия для всех покрытий</h2>
+    <div class="common-grid">
+      <div class="common-item">
+        <div class="num">1</div>
+        <h4>От 1 м²</h4>
+        <p>Минимальный заказ — один квадратный метр. По образцам — аналогично.</p>
+      </div>
+      <div class="common-item">
+        <div class="num">2</div>
+        <h4>≈ 7–10 дней</h4>
+        <p>Средний срок изготовления образца. Цвет и фактура — индивидуально под заказ.</p>
+      </div>
+      <div class="common-item">
+        <div class="num">3</div>
+        <h4>По образцу</h4>
+        <p>Запуск производства — только после согласования образца. Это страхует от расхождения ожиданий.</p>
+      </div>
+      <div class="common-item">
+        <div class="num">4</div>
+        <h4>Ручная работа</h4>
+        <p>Каждый фасад уникален. Лёгкие риски, разнородная располировка, вкрапления — норма материала и часть эстетики.</p>
+      </div>
+      <div class="common-item">
+        <div class="num">5</div>
+        <h4>Цена индивидуальная</h4>
+        <p>Финальный расчёт — по площади фасадов и сложности геометрии. Стартовые цифры в разделах — за гладкие фасады.</p>
+      </div>
+      <div class="common-item">
+        <div class="num">6</div>
+        <h4>Не для рабочих зон</h4>
+        <p>Покрытия декоративные. Для столешниц и фартуков не подходят — слишком интенсивная эксплуатация.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PARTNERS GUIDE ===================== -->
+<section class="partners" id="partners">
+  <div class="partners-inner">
+    <div class="badge">Premium Collection 2026 · Для партнёров и менеджеров</div>
+    <h2>Партнёрам: как продавать?</h2>
+    <p class="lead-p">Короткая шпаргалка для тех, кто предлагает эти покрытия конечным клиентам: кому, почему и как.</p>
+
+    <div class="partners-grid">
+      <div class="partners-card">
+        <h3>Кому продавать</h3>
+        <ul>
+          <li><strong>Дизайнеры интерьера</strong> — ищут «изюминку» под концепцию проекта</li>
+          <li><strong>Клиенты на ремонте «под ключ»</strong>, уставшие от глянца и пластика</li>
+          <li>Те, кто хочет <strong>эксклюзив «не как у всех»</strong>, статусность</li>
+          <li><strong>Коммерческие интерьеры</strong> — бутики, отели, рестораны, офисы</li>
+        </ul>
+      </div>
+      <div class="partners-card">
+        <h3>Почему покупают</h3>
+        <ul>
+          <li><strong>Эксклюзив и статус</strong> — авторская ручная работа, повтор невозможен</li>
+          <li><strong>Живая поверхность</strong> — глубина, игра света, патина в рельефе</li>
+          <li><strong>Настоящий металл</strong> (жидкий) — не плёнка, не имитация</li>
+          <li><strong>Защита в цене</strong>, реставрируемость (поталь), практичность (водный)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="partners-signal">
+      <div class="sig-title">Сигналы «горячего» клиента</div>
+      <div>«Хочу необычное», «дорого-богато», «как в бутике». Услышали — предлагайте металлы первыми.</div>
+    </div>
+
+    <div class="partners-grid" style="margin-top:32px;">
+      <div class="partners-card">
+        <h3>Приёмы продаж</h3>
+        <ul>
+          <li><strong>Продавайте акцент, а не «всё в металле»</strong>: остров, несколько фасадов, двери — чек ниже, решения легче</li>
+          <li><strong>Апселлы</strong>: металлы + вставки из шпона, фрезеровка под патину на эмали, логотип/монограмма вставками</li>
+          <li><strong>«Начнём с образца»</strong> — снимает страх и возражение по цене</li>
+          <li><strong>Покажите живой образец или фото</strong> — материал продаёт сам себя</li>
+        </ul>
+      </div>
+      <div class="partners-card">
+        <h3>Ответы на возражения</h3>
+        <ul>
+          <li><strong>«Дорого»</strong> — не весь гарнитур, а акцент от 1 кв.м</li>
+          <li><strong>«Практично?»</strong> — для фасадов да, уход как у эмали, не для рабочих зон</li>
+          <li><strong>«Потускнеет?»</strong> — защита в цене (лак/воск, у потали лак обязателен)</li>
+          <li><strong>«Повторить потом?»</strong> — каждый фасад уникален, это ценность; запуск по образцу</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="partners-grid" style="margin-top:32px;grid-template-columns:1fr;">
+      <div class="partners-card">
+        <h3>Как формируется цена и следующий шаг</h3>
+        <ul>
+          <li><strong>Цена «от»</strong> — за гладкий фасад. <strong>Наценка</strong> — за фрезеровку, текстуру, брашировку, вставку. <strong>Финал</strong> — по площади и геометрии</li>
+          <li><strong>Минимальный заказ</strong> от 1 кв.м, образец 7–10 дней, запуск только после согласования образца</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="partners-next">
+      <div class="nx-title">Следующий шаг</div>
+      <div>Запросите образец в нужном цвете и расчёт по проекту клиента. Образец на руках снимает до 90% сомнений и продаёт сам.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="footer-brand"><img src="images/logo/logo-pro.png" alt="3ДТЕМА"></div>
+  <p>Премиум-фасады с ручной финишной обработкой</p>
+  <p style="margin-top:24px;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;color:#6b5f48;">Документ обновляется по мере формирования цен и расширения линейки</p>
+</footer>
+
+</body>
+</html>
